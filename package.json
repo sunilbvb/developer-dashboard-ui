@@ -1,0 +1,36 @@
+{
+  "name": "developer-dashboard-ui",
+  "version": "1.0.0",
+  "description": "Standalone, zero-dependency generic UI component library for developer tools, dashboards, and web applications.",
+  "main": "dist/ui.css",
+  "style": "dist/ui.css",
+  "files": [
+    "dist",
+    "components",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "bundle": "python3 bundle.py",
+    "start": "python3 server.py"
+  },
+  "keywords": [
+    "css",
+    "ui",
+    "components",
+    "dashboard",
+    "developer-tools",
+    "design-system",
+    "zero-dependency"
+  ],
+  "author": "Sunil Bakale",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunilbvb/developer-dashboard-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sunilbvb/developer-dashboard-ui/issues"
+  },
+  "homepage": "https://github.com/sunilbvb/developer-dashboard-ui#readme"
+}

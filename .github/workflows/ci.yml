@@ -1,0 +1,25 @@
+name: CI & Bundle Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run Bundler
+        run: python3 bundle.py
+
+      - name: Check for Uncommitted Changes in dist/
+        run: git diff --exit-code dist/
