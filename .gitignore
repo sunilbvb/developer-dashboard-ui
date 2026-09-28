@@ -4,6 +4,7 @@ Thumbs.db
 
 # IDEs & Editors
 .idea/
+*.iml
 .vscode/
 *.sublime-project
 *.sublime-workspace
